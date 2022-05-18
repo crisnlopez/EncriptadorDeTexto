@@ -1,0 +1,154 @@
+:root {
+  /*Dark Blue*/
+  --Dark-blue-500: #052051;
+  --Dark-blue-400: #072B61;
+  --Dark-blue-300: #0A3871;
+  --Dark-blue-200: #356EA9;
+  --Dark-blue-100: #609ED4;
+
+  /*Gray*/
+  --Gray-500: #343A40;
+  --Gray-400: #495057;
+  --Gray-300: #868E96;
+  --Gray-200: #ADB5BD;
+  --Gray-100: #CED4DA;
+
+  /*Light blue*/
+  --Light-blue-500: #757FB2;
+  --Light-blue-400: #AAB2D5;
+  --Light-blue-300: #E9ECF8;
+  --Light-blue-200: #EFF1FA;
+  --Light-blue-100: #F3F5FC;
+
+  /*White*/
+  --White: #FFF;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body{
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: var(--Light-blue-100);
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  margin-top: 4vh;
+  margin-bottom: 5rem;
+} 
+
+.texto-input textarea{
+  width: 100%;
+  min-height: 30vh;
+  padding: .9rem;
+  background-color: inherit;
+  color: var(--Dark-blue-300);
+  font-size: 2rem;
+  text-transform: lowercase;
+  border: none;
+  resize: vertical;
+}
+
+.texto-input textarea:focus{
+  outline: 2px solid var(--Dark-blue-200);
+}
+
+.texto-input p{
+  color: var(--Gray-400);
+  font-size: .75rem;
+}
+
+.texto-input p img{
+  margin-right: .3em;
+  vertical-align: text-top;
+}
+
+button + button{
+  margin-top: 1rem;
+} 
+
+.button{
+  min-width: 100%;
+  padding: 1.5rem;
+  background-color: inherit;
+  color: var(--Dark-blue-300);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 25px;
+}
+
+.button:hover{
+  background-color: var(--Light-blue-300);
+  cursor: pointer;
+}
+
+.button-dark{
+  background-color: var(--Dark-blue-300);
+  color: var(--White);
+}
+
+.button-dark:hover{
+  background-color: var(--Dark-blue-400);
+}
+
+.texto-output{
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: var(--White);
+  border-radius: 2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, .08);
+}
+
+.texto-output img{
+  display: none;
+}
+
+.texto-output img + p{
+  color: var(--Gray-500);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.texto-output-encriptado{
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+.texto-output .button-copiar{
+  display: none;
+}
+
+footer{
+  margin-top: 10vh;
+  padding: 1.5rem 1rem;
+  background-color: var(--Gray-500);
+}
+
+footer p{
+  color: var(--White);
+  font-size: .85rem;
+}
+
+footer p a{
+  padding: .05em .3em;
+  color: var(--Light-blue-500);
+  border-radius: .3em;
+  text-decoration: none;
+}
+
+footer p a:focus,
+footer p a:hover{
+  border-bottom: 1px solid;
+  background-color: var(--White);
+  color: var(--Gray-500);
+}
