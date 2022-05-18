@@ -34,7 +34,7 @@
 
 body{
   min-height: 100vh;
-  background-color: var(--Light-blue-300);
+  background-color: var(--Light-blue-100);
   font-family: 'Inter', sans-serif;
 }
 
@@ -48,9 +48,9 @@ header{
   min-height: 30vh;
   padding: .9rem;
   background-color: inherit;
-  text-transform: lowercase;
-  font-size: 2rem;
   color: var(--Dark-blue-300);
+  font-size: 2rem;
+  text-transform: lowercase;
   border: none;
   resize: vertical;
 }
@@ -60,13 +60,40 @@ header{
 }
 
 .texto-input p{
-  font-size: .75rem;
   color: var(--Gray-400);
+  font-size: .75rem;
 }
 
 .texto-input p img{
   margin-right: .3em;
   vertical-align: text-top;
+}
+
+button + button{
+  margin-top: 1rem;
+} 
+
+.button{
+  min-width: 100%;
+  padding: 1.5rem;
+  background-color: inherit;
+  color: var(--Dark-blue-300);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 25px;
+}
+
+.button:hover{
+  background-color: var(--Light-blue-300);
+  cursor: pointer;
+}
+
+.button-dark{
+  background-color: var(--Dark-blue-300);
+  color: #FFF;
+}
+
+.button-dark:hover{
+  background-color: var(--Dark-blue-400);
 }
 
 .texto-output img{
