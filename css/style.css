@@ -19,6 +19,9 @@
   --Light-blue-300: #E9ECF8;
   --Light-blue-200: #EFF1FA;
   --Light-blue-100: #F3F5FC;
+
+  /*White*/
+  --White: #FFF;
 }
 
 *,
@@ -89,13 +92,37 @@ button + button{
 
 .button-dark{
   background-color: var(--Dark-blue-300);
-  color: #FFF;
+  color: var(--White);
 }
 
 .button-dark:hover{
   background-color: var(--Dark-blue-400);
 }
 
+.texto-output{
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: var(--White);
+  border-radius: 2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, .08);
+}
+
 .texto-output img{
+  display: none;
+}
+
+.texto-output img + p{
+  color: var(--Gray-500);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.texto-output-encriptado{
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+.texto-output .button-copiar{
   display: none;
 }
