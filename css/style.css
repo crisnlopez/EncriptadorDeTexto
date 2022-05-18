@@ -1,22 +1,74 @@
 :root {
   /*Dark Blue*/
-  --Dark-blue-500: #052051
-  --Dark-blue-400: #072B61
-  --Dark-blue-300: #0A3871
-  --Dark-blue-200: #356EA9
-  --Dark-blue-100: #609ED4
+  --Dark-blue-500: #052051;
+  --Dark-blue-400: #072B61;
+  --Dark-blue-300: #0A3871;
+  --Dark-blue-200: #356EA9;
+  --Dark-blue-100: #609ED4;
 
   /*Gray*/
-  --Gray-500: #343A40
-  --Gray-400: #495057
-  --Gray-300: #868E96
-  --Gray-200: #ADB5BD
-  --Gray-100: #CED4DA
+  --Gray-500: #343A40;
+  --Gray-400: #495057;
+  --Gray-300: #868E96;
+  --Gray-200: #ADB5BD;
+  --Gray-100: #CED4DA;
 
   /*Light blue*/
-  --Light-blue-500: #757FB2
-  --Light-blue-400: #AAB2D5
-  --Light-blue-300: #E9ECF8
-  --Light-blue-200: #EFF1FA
-  --Light-blue-100: #F3F5FC
+  --Light-blue-500: #757FB2;
+  --Light-blue-400: #AAB2D5;
+  --Light-blue-300: #E9ECF8;
+  --Light-blue-200: #EFF1FA;
+  --Light-blue-100: #F3F5FC;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--Light-blue-300);
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  margin-top: 4vh;
+  margin-bottom: 5rem;
+} 
+
+.texto-input textarea{
+  width: 100%;
+  min-height: 30vh;
+  padding: .9rem;
+  background-color: inherit;
+  text-transform: lowercase;
+  font-size: 2rem;
+  color: var(--Dark-blue-300);
+  border: none;
+  resize: vertical;
+}
+
+.texto-input textarea:focus{
+  outline: 2px solid var(--Dark-blue-200);
+}
+
+.texto-input p{
+  font-size: .75rem;
+  color: var(--Gray-400);
+}
+
+.texto-input p img{
+  margin-right: .3em;
+  vertical-align: text-top;
+}
+
+.texto-output img{
+  display: none;
 }
