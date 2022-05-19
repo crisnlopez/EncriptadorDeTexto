@@ -35,8 +35,8 @@ html{
 }
 
 .container{
-  max-width: 90%;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 body{
@@ -184,8 +184,8 @@ footer p a:hover{
   } 
 
   header{
-    margin-bottom: 0;
     margin-left: 3.5vw;
+    margin-bottom: 0;
   }
 
   .flex-container{
@@ -200,7 +200,7 @@ footer p a:hover{
     flex-grow: 1;
     margin-left: 5vw;
     max-width: 55%;
-    padding-top: 2rem;
+    padding: 2rem 0;
   }
 
   .texto-input textarea{
@@ -210,5 +210,18 @@ footer p a:hover{
   .texto-output{
     margin-top: 0;
     max-width: 40%;
+  }
+
+  .output-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100%;
+  }
+
+  .texto-output img{
+    display: initial;
   }
 }
