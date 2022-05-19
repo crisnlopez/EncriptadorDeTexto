@@ -17,25 +17,30 @@
       <header>
         <img src="img/Alura_logo.svg" alt="Logo Alura">
       </header>
-
+      
       <main>
-        <section class="texto-input">
-          <textarea placeholder="Ingrese el texto aqui" autofocus></textarea>
-          <p><img src="img/info-icon.svg" alt="icon info">Solo letras minúsculas y sin acentos</p>
-          <div>
-            <button type="button" class="button button-dark">Encriptar</button>
-            <button type="button" class="button">Desencriptar</button>
-          </div>
-        </section>
+        <div class="flex-container">
+          <section class="texto-input">
+            <textarea placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <p><img src="img/info-icon.svg" alt="icon info">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons-container">
+              <button type="button" class="button button-dark">Encriptar</button>
+              <button type="button" class="button">Desencriptar</button>
+            </div>
+          </section>          
 
-        <section class="texto-output">
-          <img src="img/munieco.svg" alt="Muñeco mirando un diamante">
-          <p>Ningún mensaje fue encontrado</p>
-          <p class="texto-output-encriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
-          <button type="button" class="button button-copiar">Copiar</button>
-        </section>
+          <section class="texto-output">
+            <div class="output-no_content"> 
+              <img src="img/munieco.svg" alt="Muñeco mirando un diamante">
+              <p>Ningún mensaje fue encontrado</p>
+              <p class="texto-output-encriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
+              <button type="button" class="button button-copiar">Copiar</button>
+            </div>
+          </section> 
+        </div>
       </main>
     </div>
+  
     <footer>
       <div class="container">
         <p>Hecho por <a href="https://cris-dev.herokuapp.com/" target="_blank">Cristian Lopez</a> para el Challenge de <a href="http://www.aluracursos.com">Alura</a></p>
