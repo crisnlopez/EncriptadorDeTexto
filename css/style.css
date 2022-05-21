@@ -171,7 +171,7 @@ footer p a:hover{
 #notificacion{
   position: absolute;
   margin: 0 auto;
-  top: 0;
+  top: -10%;
   left: 0;
   right: 0;
   width: max-content;
@@ -181,6 +181,23 @@ footer p a:hover{
   font-family: 'Inter', sans-serif;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  animation-name: show;
+  animation-duration: 3s;
+}
+
+@keyframes show{
+  from{
+    top: -10%;
+  }
+  10%{
+    top:0
+  }
+  50%{
+    top: 0;
+  }
+  to{
+    top: -10%;
+  }
 }
 
 @media only screen and (min-width: 600px){
