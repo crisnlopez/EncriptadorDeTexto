@@ -9,6 +9,7 @@ const outputDiv = document.getElementById("output-container")
 const noMsg = document.getElementById("no_msg")
 const msgEncriptado = document.getElementById("msg_encriptado")
 const muniecoImg = document.querySelector("img[src='img/munieco.svg']")
+const notificacion = document.getElementById("notificacion")
 
 const noPermitido = ['á','é','í','ó','ú','?','/','!','@','#','$','%','^','&','*','(',')','-','_','=','+','[',']','{','}','`','~','|','\\']
 const ingresaTexto = "Ingresa el texto que desees encriptar o desencriptar."
@@ -97,6 +98,28 @@ const mostrarInicio = () => {
   msgEncriptado.innerText = ingresaTexto
 }
 
+async function copiarTexto() {
+  try {
+    await navigator.clipboard.writeText(msg_encriptado.innerText)
+      .then(() =>{
+        notificar('Texto copiado')
+      })
+      .catch(notificar)
+  } catch (err) {
+    console.error('Failed to copy:', err)
+  }
+}
+
+const notificar = value => {
+  clearTimeout(notificar.timer)
+
+  if (notificacion.hidden) notificacion.textContent = value
+
+  notificacion.hidden = false
+  notificar.timer = setTimeout(() => {notificacion.hidden = true}, 3000)
+}
+
 // Eventos
 btnEncriptar.addEventListener("click", encriptar)
 btnDesencriptar.addEventListener("click",desencriptar)
+btnCopiar.addEventListener("click", copiarTexto)
