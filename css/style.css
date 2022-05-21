@@ -168,6 +168,21 @@ footer p a:hover{
   display: none !important;
 }
 
+#notificacion{
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: max-content;
+  padding: .5rem 1rem;
+  background-color: var(--Dark-blue-500);
+  color: var(--White);
+  font-family: 'Inter', sans-serif;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 @media only screen and (min-width: 600px){
   .buttons-container{
     display: flex;
